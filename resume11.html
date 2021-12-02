@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap-CVRams</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #4c4c;
+            box-shadow: 2px 2px 2px red;
+        }
+
+        aside{
+
+        background-image: url('images/town.jpeg');
+        background-repeat: repeat;
+        color: white;
+        }
+
+        .Image2class {
+
+            width: 50px;
+            height: 50px;
+            border-radius: 70px;
+
+        }
+
+        .Image3class {
+
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+
+        }
+
+        @keyframes animatedSquare {
+  0%   {
+    transform:rotate(90deg);}
+  25%  {
+    transform:rotate(180deg);}
+  50%  {
+    transform:rotate(270deg);}
+
+
+  
+  100% {
+    transform:rotate(360deg);
+    }
+}
+
+
+/* The element to apply the animation to */
+div.jumbotron div  {
+  width: 130px;
+  height: 130px;
+  
+  animation-name: animatedSquare;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; 
+  animation-direction: alternate;
+  
+} 
+.ImageModification{
+   
+    width: 120px;
+    height: 120px;
+    float:left;
+    margin:0;
+    
+}
+.ImageModification1{
+   
+ filter:brightness(0.25);
+ float:left;
+margin:0;
+ 
+}
+.ImageModification2{
+   
+  filter:brightness(0.45);
+  float:left;
+  margin:0;
+}
+.ImageModification3{
+   
+  filter:sepia(100%);
+  float:left;
+  margin:0;
+}
+.ImageModification4{
+   
+  filter:opacity(20%);
+  float:left;
+  margin:0;
+}
+
+
+        <!------------------------------------------------------------------------------------------->
+    </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#Menu">Menu</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+<!----------------------------------------------------------------------------------------------------------->
+    <!--<div class="jumbotron text-center" style="padding-bottom:0 ;">-->
+
+
+    <div class="container-fluid bg-warning mx-3 mt-2 py-2">
+        <!--<div class="jumbotron text-center" style="padding-top:0">-->
+          
+
+        <!--<img src="images/R.jpeg" class="mx-auto d-block rounded-circle" style="width:150px;">-->
+        <picture>
+          <source media="(min-width: 991px)" srcset="images/R.jpeg" >
+          <source media="(min-width: 767px)" srcset="images/gmail.png">
+          <source media="(min-width: 479px)" srcset="images/plant.jfif">
+          <img src="images/R.jpg" class="mx-auto d-block rounded-circle" style="width:150px">
+        </picture>
+       
+        <h1 class="mx-auto text-center"><br>Rams Bushidi</h1>
+        <p class="mx-auto text-center">An introductory personal statement.</p>
+        
+    </div>
+
+
+
+    <div class="container-fluid mx-3">
+        <div class="row">
+
+            <article class="col-2 bg-danger">
+                <h2 class="display-4"id="Menu">Menu</h2>
+
+
+                <p>
+                    <a href="#education"> Education</a><br>
+                    <a href="#experience"> Experience</a><br>
+                    <a href="#skills"> Skills</a>
+
+
+                </p>
+                <div class="card bg-light" style="width:200px">
+                  
+                  <img class="card-img-top mx-auto d-block rounded-circle" src="images/R.jpeg" alt="Card image" style="width:20%">
+                   
+
+                  <div class="card-body">
+                    <h4 class="card-title">Rams Bushidi</h4>
+                    <p class="card-text">Sale Engineer at Rt Systems <br>Rams Bushidi is an engineer  from UCT<br>Tel: 0813394921</p>
+                    <a href="#education" class="btn btn-primary">See Profile</a>
+                  </div>
+                </div>
+            </article>
+
+            <aside class="col-10 bg-success">
+
+
+                <h2 class="display-4" id="education">Education</h2>
+                <h3>Intro to Web at <a href="https://www.codespace.co.za/">CodeSpace Academy.</h3></a>
+                <p>My background includes a B.S. degree in Power Engineering and Control System and a National Diploma
+                    in Electronics and Communications Engineering. I have gained experience in the solar industry for
+                    the past two years. I have been involved in the design and maintenance of systems up to 1.5 MGw. As
+                    an engineer, I have been able to design and conduct work according to engineering principles. I have
+                    excellent communication skills and team building spirit. .</p>
+
+                <h3> Qualification 2</h3>
+                <p> i have a National Diploma in Electrical Engineering specifically in telecomunication.</p>
+
+                <h2 class="display-4" id="experience">Experience</h2>
+                <h3>Job 1: ACES Africa, Electrical Engineer Designer</h3>
+                <p>
+                <ul>
+                    <li>PV Designing, maintaining and implementing solar PV plants and building layout </li>
+                    <li>Writing report on safety and maintenance manual & Performing a wide range of engineering tasks
+                        by operating computer design and engineering software.</li>
+                    <li>Designing project layout and reticulation drawings in Autocad and Helioscope, Conducting
+                        inspections of all electrical works and overseeing O&M activities and data processing
+                        &Commissioning of the solar system
+                    </li>
+                </ul>
+                </p>
+
+                <h3>Job 2: : Airborne Drones, Drones technician Internship</h3>
+                <p>
+                <ul>
+                    <li>Designed and implemented the electrical design using AutoCAD
+
+
+                    </li>
+                    <li>Improved the testing and analysis systems with new strategies </li>
+                    <li>Provided customer service support through a support team & Designed schematic diagrams of the
+                        digital and analog circuits </li>
+                </ul>
+                </p>
+
+                <h2 class="display-4" id="skills">Skills</h2>
+                <p>
+                <ul>
+                    <li>Python & Excel</li>
+                    <li>PV Design </li>
+                    <li>Python</li>
+                    <li>C++</li>
+                </ul>
+                </p>
+        </div>
+
+        </aside>
+
+    </div>
+    </div>
+    <div class="container-fluid  ">
+        
+          <div class="jumbotron" style="width:100%">
+
+            <h3 > <small>Contact Details </small></h3>
+            <div>
+
+            <a href="https://www.linkedin.com/in/bushidi-ramazani-1ab1ba73/"><img src="images/linkin.png" class="rounded-circle" style="width: 50px" ></a>
+            <a href="https://https://www.facebook.com/rams.bushidi"><img src="images/facebook.png" class="rounded-circle " style="width: 50px"></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox"><img  src="images/gmail.png"
+                    class="img-thumbnail "style="width: 50px"></a>
+            </div>
+
+          </div>
+    </div>
+
+</body>
+
+</html
